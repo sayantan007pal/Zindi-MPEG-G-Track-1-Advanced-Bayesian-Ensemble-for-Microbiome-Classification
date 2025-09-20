@@ -1,0 +1,74 @@
+{
+  "timestamp": "2025-09-20T19:19:32.045236",
+  "dataset_info": {
+    "n_samples": 20,
+    "n_features": 69,
+    "classes": [
+      "Mild",
+      "Moderate",
+      "Severe"
+    ],
+    "class_distribution": {
+      "Moderate": 9,
+      "Severe": 6,
+      "Mild": 5
+    }
+  },
+  "model_results": {
+    "Random Forest": {
+      "cv_mean": 0.75,
+      "cv_std": 0.27386127875258304,
+      "cv_scores": [
+        0.25,
+        1.0,
+        0.75,
+        1.0,
+        0.75
+      ]
+    },
+    "Random Forest (deeper)": {
+      "cv_mean": 0.75,
+      "cv_std": 0.27386127875258304,
+      "cv_scores": [
+        0.25,
+        1.0,
+        0.75,
+        1.0,
+        0.75
+      ]
+    },
+    "Logistic Regression": {
+      "cv_mean": 0.85,
+      "cv_std": 0.2,
+      "cv_scores": [
+        0.5,
+        1.0,
+        0.75,
+        1.0,
+        1.0
+      ]
+    },
+    "Logistic Regression (L1)": {
+      "cv_mean": 0.25,
+      "cv_std": 0.0,
+      "cv_scores": [
+        0.25,
+        0.25,
+        0.25,
+        0.25,
+        0.25
+      ]
+    }
+  },
+  "best_model": "Logistic Regression",
+  "best_accuracy": 0.85,
+  "baseline_comparison": {
+    "baseline_accuracy": 0.3,
+    "enhanced_accuracy": 0.85,
+    "improvement": 0.55,
+    "improvement_percentage": 183.33333333333334
+  },
+  "feature_analysis": {
+    "top_features": null
+  }
+}

@@ -1,0 +1,27 @@
+MPEG-G Microbiome Challenge - Sample Mapping Analysis
+=======================================================
+
+DATASET STRUCTURE:
+• Cytokine data: 670 samples with format 'Sample_XXXXXX'
+• Microbiome data: 40 samples with format 'XXXXXXXXXXXX-X'
+• Metadata: 20 subjects with paired T1/T2 samples
+• Training data: 1262 samples matching cytokine format
+
+KEY FINDINGS:
+• NO direct overlap between cytokine and microbiome sample IDs
+• Cytokine and training data use same sample ID format
+• Microbiome data matches metadata sample naming
+• Datasets appear to be from different studies/cohorts
+
+IMPLICATIONS FOR ANALYSIS:
+• Cannot create unified microbiome → cytokine prediction model
+• Must analyze datasets separately or find alternative connections
+• Consider demographic matching if subject info available
+• Focus on within-dataset analyses and method development
+
+RECOMMENDED APPROACH:
+1. Analyze microbiome data separately (40 samples)
+2. Analyze cytokine data separately (670 samples)
+3. Develop methods on available data
+4. Consider transfer learning approaches
+5. Look for additional mapping files or documentation

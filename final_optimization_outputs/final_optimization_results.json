@@ -1,0 +1,343 @@
+{
+  "timestamp": "2025-09-20T20:06:24.621656",
+  "configuration": {
+    "bayesian_calls": 50,
+    "cv_folds": 5,
+    "bootstrap_samples": 100,
+    "confidence_level": 0.95
+  },
+  "optimization_results": {
+    "optimized_ensemble": {
+      "nested_cv": {
+        "nested_scores": [
+          0.75,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "nested_mean": 0.95,
+        "nested_std": 0.09999999999999999,
+        "overall_accuracy": 0.95,
+        "predictions": [
+          "1",
+          "1",
+          "1",
+          "0",
+          "1",
+          "0",
+          "2",
+          "1",
+          "1",
+          "1",
+          "2",
+          "0",
+          "1",
+          "0",
+          "2",
+          "1",
+          "1",
+          "2",
+          "2",
+          "0"
+        ],
+        "true_labels": [
+          "1",
+          "1",
+          "2",
+          "0",
+          "1",
+          "0",
+          "2",
+          "1",
+          "1",
+          "1",
+          "2",
+          "0",
+          "1",
+          "0",
+          "2",
+          "1",
+          "1",
+          "2",
+          "2",
+          "0"
+        ]
+      },
+      "bootstrap_ci": {
+        "bootstrap_mean": 0.9403174603174602,
+        "bootstrap_std": 0.048968704173279684,
+        "ci_lower": 0.8208333333333335,
+        "ci_upper": 1.0,
+        "bootstrap_scores": [
+          0.9523809523809524,
+          0.9523809523809524,
+          1.0,
+          0.9523809523809524,
+          0.8412698412698413,
+          0.9523809523809524,
+          1.0,
+          0.9444444444444445,
+          0.8888888888888888,
+          0.9047619047619048,
+          0.8968253968253969,
+          1.0,
+          0.9523809523809524,
+          1.0,
+          0.7936507936507936,
+          0.8571428571428571,
+          0.8888888888888888,
+          0.9523809523809524,
+          0.9444444444444445,
+          0.9047619047619048,
+          1.0,
+          0.8333333333333334,
+          1.0,
+          0.9523809523809524,
+          0.8015873015873015,
+          0.8968253968253969,
+          0.8968253968253969,
+          0.9523809523809524,
+          0.9523809523809524,
+          0.9523809523809524,
+          0.9523809523809524,
+          0.9523809523809524,
+          0.9444444444444445,
+          0.9444444444444445,
+          0.9523809523809524,
+          0.9523809523809524,
+          0.9444444444444445,
+          0.9523809523809524,
+          0.9523809523809524,
+          0.9047619047619048,
+          1.0,
+          0.9047619047619048,
+          0.9047619047619048,
+          0.9444444444444445,
+          1.0,
+          0.9444444444444445,
+          0.9523809523809524,
+          0.9444444444444445,
+          1.0,
+          0.9523809523809524,
+          0.9523809523809524,
+          0.9047619047619048,
+          1.0,
+          0.9523809523809524,
+          0.9523809523809524,
+          0.8968253968253969,
+          1.0,
+          0.9444444444444445,
+          0.9523809523809524,
+          0.9523809523809524,
+          0.8571428571428571,
+          0.8968253968253969,
+          1.0,
+          0.8492063492063493,
+          0.8968253968253969,
+          0.9444444444444445,
+          0.9444444444444445,
+          1.0,
+          0.9047619047619048,
+          1.0,
+          0.9444444444444445,
+          0.8888888888888888,
+          0.9047619047619048,
+          1.0,
+          1.0,
+          0.9047619047619048,
+          1.0,
+          1.0,
+          0.9047619047619048,
+          0.9523809523809524,
+          1.0,
+          0.9523809523809524,
+          1.0,
+          0.9047619047619048,
+          0.8095238095238096,
+          0.9523809523809524,
+          0.9444444444444445,
+          0.9523809523809524,
+          0.8571428571428571,
+          0.8968253968253969,
+          1.0,
+          0.9444444444444445,
+          0.9523809523809524,
+          1.0,
+          0.9444444444444445,
+          1.0,
+          0.9047619047619048,
+          1.0,
+          1.0,
+          0.8968253968253969
+        ]
+      },
+      "feature_count": 10,
+      "selected_features": [
+        "change_function_K03750",
+        "change_function_K02588",
+        "change_species_GUT_GENOME234915",
+        "pca_component_2",
+        "change_species_GUT_GENOME091092",
+        "temporal_var_species_GUT_GENOME002690",
+        "change_species_Blautia schinkii",
+        "pca_component_1",
+        "stability_function_K07466",
+        "change_function_K03484"
+      ],
+      "rf_params": {
+        "n_estimators": "500",
+        "max_depth": "1",
+        "min_samples_split": "8",
+        "min_samples_leaf": "2",
+        "max_features": 1.0,
+        "criterion": "gini"
+      },
+      "gb_params": {
+        "n_estimators": "290",
+        "learning_rate": 0.08076060788613365,
+        "max_depth": "10",
+        "min_samples_split": "6",
+        "subsample": 0.9345745243582918
+      },
+      "ensemble_weights": [
+        0.522334984317205,
+        0.3901717053591802,
+        0.0874933103236147
+      ]
+    },
+    "synthetic_augmented": {
+      "cv_scores": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "cv_mean": 1.0,
+      "cv_std": 0.0,
+      "augmented_samples": 27,
+      "original_samples": 20
+    },
+    "stability_analysis": {
+      "seed_scores": [
+        1.0,
+        0.95,
+        1.0,
+        0.95,
+        0.95
+      ],
+      "stability_mean": 0.9700000000000001,
+      "stability_std": 0.024494897427831806,
+      "stability_range": 0.050000000000000044
+    }
+  },
+  "final_recommendations": {
+    "timestamp": "2025-09-20T20:06:24.133543",
+    "analysis_summary": {
+      "total_approaches_evaluated": 6,
+      "optimization_methods_used": [
+        "Gaussian Process Bayesian Optimization",
+        "Stability Selection",
+        "Nested Cross-Validation",
+        "Bootstrap Confidence Intervals",
+        "Synthetic Data Augmentation"
+      ]
+    },
+    "model_ranking": {
+      "rank_1": {
+        "model": "bayesian_optimized_ensemble",
+        "cv_mean": 0.95,
+        "cv_std": 0.09999999999999999,
+        "confidence_interval": "[0.821, 1.000]"
+      },
+      "rank_2": {
+        "model": "ultra_advanced_ensemble",
+        "cv_mean": 0.9,
+        "cv_std": 0,
+        "confidence_interval": "N/A"
+      },
+      "rank_3": {
+        "model": "transfer_learning",
+        "cv_mean": 0.8,
+        "cv_std": 0.29,
+        "confidence_interval": "N/A"
+      },
+      "rank_4": {
+        "model": "integrated_gnn_ensemble",
+        "cv_mean": 0.75,
+        "cv_std": 0.27386127875258304,
+        "confidence_interval": "N/A"
+      }
+    },
+    "final_recommendation": {
+      "selected_model": "bayesian_optimized_ensemble",
+      "selection_rationale": [
+        "Highest cross-validation accuracy: 0.950",
+        "Standard deviation: 0.100",
+        "Comprehensive Bayesian optimization",
+        "Rigorous nested cross-validation",
+        "Bootstrap confidence intervals for robustness"
+      ],
+      "expected_performance": {
+        "cv_accuracy": 0.95,
+        "std_deviation": 0.09999999999999999,
+        "confidence_interval": [
+          0.8208333333333335,
+          1.0
+        ]
+      }
+    },
+    "implementation_details": {
+      "feature_selection": {
+        "method": "Bayesian + Stability Selection",
+        "selected_features": 10,
+        "total_original_features": 219,
+        "feature_reduction_ratio": 0.045662100456621
+      },
+      "model_configuration": {
+        "ensemble_type": "Soft Voting Classifier",
+        "base_models": [
+          "RandomForest",
+          "GradientBoosting",
+          "LogisticRegression"
+        ],
+        "ensemble_weights": [
+          0.522334984317205,
+          0.3901717053591802,
+          0.0874933103236147
+        ],
+        "rf_parameters": {
+          "n_estimators": "500",
+          "max_depth": "1",
+          "min_samples_split": "8",
+          "min_samples_leaf": "2",
+          "max_features": 1.0,
+          "criterion": "gini"
+        },
+        "gb_parameters": {
+          "n_estimators": "290",
+          "learning_rate": 0.08076060788613365,
+          "max_depth": "10",
+          "min_samples_split": "6",
+          "subsample": 0.9345745243582918
+        }
+      },
+      "validation_approach": {
+        "nested_cv_folds": 5,
+        "bootstrap_samples": 100,
+        "confidence_level": 0.95
+      }
+    },
+    "risk_assessment": {
+      "generalization_risk": "LOW",
+      "overfitting_risk": "LOW",
+      "data_dependency": "Small dataset (20 samples) - results may vary with different train/test splits",
+      "recommendations": [
+        "Monitor performance on any additional validation data",
+        "Consider ensemble of multiple models if performance varies",
+        "Document any data preprocessing steps for reproducibility"
+      ]
+    }
+  }
+}

@@ -1,0 +1,35 @@
+MPEG-G Microbiome Challenge Track 1 - Data Exploration Summary
+============================================================
+
+DATASET OVERVIEW:
+• Cytokine profiles: 670 samples, 66 cytokines
+• Species abundance: 40 samples, 4255 species
+• Function abundance: 40 samples, 7973 functions
+• Training metadata: 2901 subjects
+
+SAMPLE OVERLAP:
+• Cytokine ∩ Species ∩ Functions: 0 samples
+• Samples with complete data: 0 samples
+
+DATA CHARACTERISTICS:
+
+DATA QUALITY CONSIDERATIONS:
+• High sparsity in microbiome features (many zeros)
+• Wide range of abundance values - consider normalization
+• Check for batch effects between plates/collection dates
+• Consider log transformation for abundance data
+
+FEATURE ENGINEERING RECOMMENDATIONS:
+• Apply relative abundance normalization (divide by total reads)
+• Log transformation: log(abundance + 1)
+• Filter low-abundance features (present in <10% samples)
+• Consider aggregation by taxonomic levels (genus, family)
+• Principal component analysis for dimensionality reduction
+• Check for multicollinearity in cytokine targets
+
+OUTPUT FILES GENERATED:
+• species_feature_matrix.csv - Species abundance matrix
+• function_feature_matrix.csv - Functional abundance matrix
+• merged_microbiome_cytokine_dataset.csv - Complete dataset
+• feature_matrix.csv - Features only
+• cytokine_targets.csv - Target variables only

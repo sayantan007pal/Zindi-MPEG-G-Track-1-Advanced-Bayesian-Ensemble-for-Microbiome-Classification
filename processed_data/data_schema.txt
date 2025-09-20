@@ -1,0 +1,51 @@
+MPEG-G Microbiome Challenge - Data Schema
+=============================================
+
+MICROBIOME DATASET:
+--------------------
+Shape: 40 samples × 9132 features
+
+Feature Types:
+• Species abundance: 3298 features
+• Functional abundance: 5834 features
+
+Metadata Schema:
+• sample_id: Unique sample identifier
+• subject_id: Subject identifier (links T1/T2 timepoints)
+• timepoint: T1 (baseline) or T2 (follow-up)
+• age: Subject age in years
+• gender: M/F
+• bmi: Body mass index
+• symptom: Severity category (Healthy, Mild, Moderate, Severe)
+
+CYTOKINE DATASET:
+------------------
+Shape: 670 samples × 66 features
+
+Feature Types:
+• All features are cytokine measurements (continuous values)
+• Values are log-transformed and standardized
+
+Sample Cytokines:
+• IL17F, FASL, TGFA, MIP1A
+• SDF1A, IL27, LIF, IL1B
+• IL2, IL4, IL5, IP10
+• IL6, IL7, IL8, IL10
+• IFNB, EOTAXIN, IL12P70, IL13
+• ... and 46 more
+
+OUTPUT FILE STRUCTURE:
+-----------------------
+processed_data/
+├── microbiome_features_processed.csv
+├── microbiome_metadata_processed.csv
+├── microbiome_X_train.csv
+├── microbiome_X_test.csv
+├── microbiome_y_train.csv
+├── microbiome_y_test.csv
+├── cytokine_features_processed.csv
+├── cytokine_metadata_processed.csv
+├── cytokine_X_train.csv
+├── cytokine_X_test.csv
+├── data_overview_plots.png
+└── [analysis reports...]

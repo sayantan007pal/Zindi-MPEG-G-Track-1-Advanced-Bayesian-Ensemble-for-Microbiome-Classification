@@ -1,0 +1,10 @@
+{
+    "network_threshold": 0.3,
+    "hidden_dim": 64,
+    "num_layers": 3,
+    "dropout": 0.2,
+    "learning_rate": 0.001,
+    "num_epochs": 50,
+    "pooling": "mean",
+    "batch_size": 16
+}

@@ -1,0 +1,202 @@
+{
+  "timestamp": "2025-09-20T19:42:40.983798",
+  "key_findings": [
+    "High co-occurrence network density (0.545) suggests strong microbiome species interdependencies",
+    "Functional network fragmentation (27 components) indicates diverse metabolic pathways",
+    "High multilayer clustering (0.840) reveals complex microbiome interaction patterns",
+    "Best GNN architecture: GAT (accuracy: 0.700)"
+  ],
+  "network_properties": {
+    "spearman": {
+      "connectivity": 0.4113384484228474,
+      "clustering": 0.6553157365987429,
+      "fragmentation": 6
+    },
+    "pearson": {
+      "connectivity": 0.391304347826087,
+      "clustering": 0.618909551074224,
+      "fragmentation": 8
+    },
+    "cooccurrence": {
+      "connectivity": 0.5447570332480819,
+      "clustering": 0.7966590497576059,
+      "fragmentation": 1
+    },
+    "functional": {
+      "connectivity": 0.06905370843989769,
+      "clustering": 0.4925072512029034,
+      "fragmentation": 27
+    },
+    "multilayer": {
+      "connectivity": 0.7549019607843137,
+      "clustering": 0.839945509640199,
+      "fragmentation": 1
+    }
+  },
+  "feature_importance": {
+    "spearman": {
+      "top_hubs": [
+        [
+          "change_function_K11184",
+          0.7205882352941176
+        ],
+        [
+          "change_function_K03271",
+          0.6911764705882353
+        ],
+        [
+          "change_function_K03750",
+          0.6764705882352942
+        ],
+        [
+          "change_species_GUT_GENOME139147",
+          0.6764705882352942
+        ],
+        [
+          "log_ratio_function_K00100",
+          0.6617647058823529
+        ]
+      ],
+      "biological_significance": [
+        "change_function_K11184: Key metabolic function K11184 (centrality: 0.721)",
+        "change_function_K03271: Key metabolic function K03271 (centrality: 0.691)",
+        "change_function_K03750: Key metabolic function K03750 (centrality: 0.676)",
+        "change_species_GUT_GENOME139147: Central species hub (centrality: 0.676)",
+        "log_ratio_function_K00100: Key metabolic function K00100 (centrality: 0.662)"
+      ]
+    },
+    "pearson": {
+      "top_hubs": [
+        [
+          "change_function_K11184",
+          0.6911764705882353
+        ],
+        [
+          "change_function_K03271",
+          0.6617647058823529
+        ],
+        [
+          "change_function_K03750",
+          0.6470588235294118
+        ],
+        [
+          "log_ratio_function_K00100",
+          0.6323529411764706
+        ],
+        [
+          "log_ratio_function_K00625",
+          0.6323529411764706
+        ]
+      ],
+      "biological_significance": [
+        "change_function_K11184: Key metabolic function K11184 (centrality: 0.691)",
+        "change_function_K03271: Key metabolic function K03271 (centrality: 0.662)",
+        "change_function_K03750: Key metabolic function K03750 (centrality: 0.647)",
+        "log_ratio_function_K00100: Key metabolic function K00100 (centrality: 0.632)",
+        "log_ratio_function_K00625: Key metabolic function K00625 (centrality: 0.632)"
+      ]
+    },
+    "cooccurrence": {
+      "top_hubs": [
+        [
+          "temporal_var_species_Blautia sp. SC05B48",
+          0.8823529411764706
+        ],
+        [
+          "stability_function_K01738",
+          0.8823529411764706
+        ],
+        [
+          "temporal_var_function_K00633",
+          0.8823529411764706
+        ],
+        [
+          "temporal_var_function_K17319",
+          0.8823529411764706
+        ],
+        [
+          "temporal_var_species_GUT_GENOME130358",
+          0.7941176470588235
+        ]
+      ],
+      "biological_significance": [
+        "temporal_var_species_Blautia sp. SC05B48: Central species hub (centrality: 0.882)",
+        "stability_function_K01738: Key metabolic function K01738 (centrality: 0.882)",
+        "temporal_var_function_K00633: Key metabolic function K00633 (centrality: 0.882)",
+        "temporal_var_function_K17319: Key metabolic function K17319 (centrality: 0.882)",
+        "temporal_var_species_GUT_GENOME130358: Central species hub (centrality: 0.794)"
+      ]
+    },
+    "functional": {
+      "top_hubs": [
+        [
+          "change_function_K11184",
+          0.19117647058823528
+        ],
+        [
+          "change_species_Fournierella massiliensis",
+          0.19117647058823528
+        ],
+        [
+          "change_function_K15256",
+          0.1764705882352941
+        ],
+        [
+          "change_function_K16924",
+          0.1764705882352941
+        ],
+        [
+          "change_species_GUT_GENOME139147",
+          0.1764705882352941
+        ]
+      ],
+      "biological_significance": [
+        "change_function_K11184: Key metabolic function K11184 (centrality: 0.191)",
+        "change_species_Fournierella massiliensis: Central species hub (centrality: 0.191)",
+        "change_function_K15256: Key metabolic function K15256 (centrality: 0.176)",
+        "change_function_K16924: Key metabolic function K16924 (centrality: 0.176)",
+        "change_species_GUT_GENOME139147: Central species hub (centrality: 0.176)"
+      ]
+    },
+    "multilayer": {
+      "top_hubs": [
+        [
+          "log_ratio_function_K02424",
+          0.9852941176470588
+        ],
+        [
+          "log_ratio_function_K01356",
+          0.9852941176470588
+        ],
+        [
+          "log_ratio_function_K02119",
+          0.9852941176470588
+        ],
+        [
+          "log_ratio_function_K00100",
+          0.9558823529411764
+        ],
+        [
+          "log_ratio_function_K03815",
+          0.9411764705882353
+        ]
+      ],
+      "biological_significance": [
+        "log_ratio_function_K02424: Key metabolic function K02424 (centrality: 0.985)",
+        "log_ratio_function_K01356: Key metabolic function K01356 (centrality: 0.985)",
+        "log_ratio_function_K02119: Key metabolic function K02119 (centrality: 0.985)",
+        "log_ratio_function_K00100: Key metabolic function K00100 (centrality: 0.956)",
+        "log_ratio_function_K03815: Key metabolic function K03815 (centrality: 0.941)"
+      ]
+    }
+  },
+  "biological_interpretation": {
+    "attention_mechanism": "Graph Attention Networks excel at identifying important microbiome interactions through learned attention weights"
+  },
+  "innovation_value": {
+    "network_based_modeling": "GNNs provide novel network-based perspective on microbiome interactions, moving beyond traditional feature-based approaches",
+    "multi_scale_analysis": "Multi-layer network integration enables analysis across different biological scales (species, functions, temporal dynamics)",
+    "interpretability": "Graph centrality measures and attention weights provide biological interpretability of learned patterns",
+    "future_potential": "GNN framework can easily incorporate additional biological networks (metabolic pathways, phylogenetic relationships, host-microbe interactions)"
+  }
+}

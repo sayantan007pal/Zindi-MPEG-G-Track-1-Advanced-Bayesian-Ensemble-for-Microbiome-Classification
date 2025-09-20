@@ -1,0 +1,68 @@
+ADVANCED FEATURE ENGINEERING SUMMARY REPORT
+==================================================
+Generated on: 2025-09-20 19:18:13
+
+DATA OVERVIEW:
+- Total samples: 20
+- Final features: 69
+- Class distribution: {'Moderate': 9, 'Severe': 6, 'Mild': 5}
+
+FEATURE SET BREAKDOWN:
+- original_subset: 100 features
+- diversity: 5 features
+- functional: 9 features
+- interactions: 90 features
+- statistical: 12 features
+- temporal: 50 features
+
+TOP 20 MOST IMPORTANT FEATURES:
+ 1. temporal_var_species_GUT_GENOME002690: 0.0618
+ 2. change_function_K03750: 0.0533
+ 3. log_ratio_function_K00100: 0.0490
+ 4. pca_component_2: 0.0466
+ 5. log_ratio_function_K02424: 0.0396
+ 6. change_function_K11184: 0.0380
+ 7. change_species_GUT_GENOME091092: 0.0359
+ 8. log_ratio_function_K02119: 0.0353
+ 9. log_ratio_function_K00625: 0.0342
+10. temporal_var_species_GUT_GENOME130358: 0.0327
+11. log_ratio_function_K01356: 0.0305
+12. temporal_var_species_Blautia sp. SC05B48: 0.0298
+13. temporal_var_species_GUT_GENOME157380: 0.0267
+14. change_function_K15256: 0.0244
+15. log_ratio_species_GUT_GENOME108684: 0.0240
+16. change_species_Blautia schinkii: 0.0239
+17. temporal_var_function_K10725: 0.0228
+18. change_function_K06987: 0.0215
+19. stability_species_GUT_GENOME122482: 0.0201
+20. change_function_K20488: 0.0200
+
+BIOLOGICAL INTERPRETATIONS:
+
+RANDOM_FOREST:
+temporal_var_species_GUT_GENOME002690: temporal var GUT GENOME002690 abundance (importance: 0.062)
+change_function_K03750: Unknown function (importance: 0.053)
+log_ratio_function_K00100: Unknown function (importance: 0.049)
+pca_component_2: Engineered feature (importance: 0.047)
+log_ratio_function_K02424: Unknown function (importance: 0.040)
+change_function_K11184: Unknown function (importance: 0.038)
+change_species_GUT_GENOME091092: change GUT GENOME091092 abundance (importance: 0.036)
+log_ratio_function_K02119: Unknown function (importance: 0.035)
+log_ratio_function_K00625: Unknown function (importance: 0.034)
+temporal_var_species_GUT_GENOME130358: temporal var GUT GENOME130358 abundance (importance: 0.033)
+
+RECOMMENDATIONS FOR MODEL IMPROVEMENT:
+1. Use ensemble methods to combine multiple feature perspectives
+2. Apply advanced regularization (L1/L2/Elastic Net) to prevent overfitting
+3. Consider stratified cross-validation due to class imbalance
+4. Explore semi-supervised learning with unlabeled samples
+5. Use feature importance for biological hypothesis generation
+6. Consider temporal modeling if longitudinal data is available
+7. Apply SMOTE or other balancing techniques for minority classes
+
+TECHNICAL NOTES:
+- Features are already scaled and normalized
+- Dimensionality reduction helps with small sample size
+- Interaction features capture non-linear relationships
+- Diversity metrics provide ecological context
+- Statistical transformations improve robustness

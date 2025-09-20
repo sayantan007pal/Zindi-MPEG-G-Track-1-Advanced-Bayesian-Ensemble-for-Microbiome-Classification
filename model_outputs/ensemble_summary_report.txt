@@ -1,0 +1,70 @@
+MPEG-G Advanced Ensemble Pipeline Results
+==================================================
+
+Analysis Date: 2025-09-20 19:24:29
+Random Seed: 42
+
+BASE MODELS PERFORMANCE:
+------------------------------
+rf                  : 0.850 ± 0.300
+xgb                 : 0.850 ± 0.200
+rf_optimized        : 0.850 ± 0.300
+lr_optimized        : 0.850 ± 0.122
+lr                  : 0.800 ± 0.100
+et                  : 0.800 ± 0.292
+mlp                 : 0.800 ± 0.187
+gb                  : 0.800 ± 0.245
+rf_deep             : 0.750 ± 0.274
+knn                 : 0.750 ± 0.158
+ada                 : 0.750 ± 0.224
+svm_linear          : 0.650 ± 0.255
+nb                  : 0.650 ± 0.255
+ridge               : 0.650 ± 0.255
+svm_rbf             : 0.550 ± 0.100
+lgb                 : 0.450 ± 0.100
+lr_l1               : 0.250 ± 0.000
+
+ENSEMBLE METHODS PERFORMANCE:
+-----------------------------------
+hard_voting              : 0.850 ± 0.300 ✓ IMPROVED
+soft_voting              : 0.850 ± 0.300 ✓ IMPROVED
+weighted_voting          : 0.850 ± 0.300 ✓ IMPROVED
+random_subspace          : 0.850 ± 0.300 ✓ IMPROVED
+feature_bagging_lr       : 0.800 ± 0.187
+dynamic                  : 0.800 ± 0.187
+diversity_pruned         : 0.750 ± 0.158
+feature_bagging_rf       : 0.700 ± 0.245
+stacking                 : 0.550 ± 0.292
+
+BEST PERFORMING METHOD: hard_voting
+BEST ACCURACY: 0.850
+IMPROVEMENT OVER BASELINE: +0.0%
+
+CONFIDENCE-WEIGHTED ACCURACY: 1.000
+
+TOP 10 MOST IMPORTANT FEATURES:
+-----------------------------------
+ 1. feature_1                     : 0.1387
+ 2. feature_15                    : 0.1011
+ 3. feature_3                     : 0.0661
+ 4. feature_0                     : 0.0613
+ 5. feature_25                    : 0.0306
+ 6. feature_11                    : 0.0273
+ 7. feature_2                     : 0.0256
+ 8. feature_5                     : 0.0221
+ 9. feature_4                     : 0.0192
+10. feature_29                    : 0.0184
+
+RECOMMENDATIONS FOR TRACK 1 SUBMISSION:
+---------------------------------------------
+1. PRIMARY RECOMMENDATION:
+   Use hard_voting (Accuracy: 0.850)
+   Variance: ±0.300
+
+2. BACKUP OPTIONS:
+   2. soft_voting: 0.850 ± 0.300
+   3. weighted_voting: 0.850 ± 0.300
+
+3. CONFIDENCE ESTIMATES:
+   High confidence predictions when multiple methods agree
+   Monitor prediction variance across ensemble members
